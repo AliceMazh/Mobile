@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/layout">
+
+    <TextView
+        android:id="@+id/qtxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Введите вопрос"
+        android:textSize="22sp"
+        android:layout_gravity="center" />
+    <EditText
+        android:id="@+id/qname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/atxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Введите верный ответ"
+        android:textSize="22sp"
+        android:layout_gravity="center" />
+    <EditText
+        android:id="@+id/aname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:layout_gravity="center"/>
+    <Button
+        android:id="@+id/addbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Добавить"
+        android:onClick="add_quest"
+        />
+
+</LinearLayout>

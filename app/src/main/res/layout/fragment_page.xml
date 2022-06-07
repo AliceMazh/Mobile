@@ -1,0 +1,74 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/displayText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:layout_gravity="center" />
+
+    <EditText
+        android:id="@+id/Teditble"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        android:textSize="22sp" />
+    <Button
+        android:id="@+id/Ansb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ответить"
+        android:onClick="OnAnsBCclick"
+        />
+
+    <Button
+        android:id="@+id/addb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Добавить"
+        android:onClick="OnAddBCclick"
+        android:visibility="invisible"
+        />
+    <Button
+        android:id="@+id/Delb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Удалить"
+        android:onClick="DelQuest"
+        android:visibility="invisible"
+        />
+
+    <Button
+        android:id="@+id/Trueans"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Показать верный ответ"
+        android:onClick="getTrueAnsw"
+        android:visibility="invisible"
+        />
+
+    <Button
+        android:id="@+id/Red"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Редактировать Вопрос"
+        android:onClick="RedQ"
+        android:visibility="invisible"
+        />
+
+
+
+
+</LinearLayout>
+
+</FrameLayout>
